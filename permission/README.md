@@ -13,4 +13,6 @@ Steps to run this project:
 npx knex init
 npx knex migrate:latest
 npx knex migrate:make "name"
+npx knex seed:make "name"
+npx knex seed:run
 
