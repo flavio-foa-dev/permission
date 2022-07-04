@@ -5,7 +5,9 @@ const userController = require('../controller/controllerUser')
 
 
 
-router.get('/user', userController.getUsersAll)
+router.get('/user/:id', userController.getBayId)
+router.get('/user/', userController.getUsersAll)
+
 
 
 router.get('/user/test',(req, res, next) =>{
