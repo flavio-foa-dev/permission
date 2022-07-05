@@ -5,18 +5,19 @@ const userController = require('../controller/controllerUser')
 
 
 
-<<<<<<< HEAD
+
 router.get('/user/:id', userController.getBayId)
 router.get('/user/', userController.getUsersAll)
+router.post('/user/', userController.create)
+router.put('/user/:id', userController.update)
+router.delete('/user/:id', userController.remove)
 
-=======
-router.get('/user', userController.getUsersAll)
->>>>>>> 2c5e13bb6e2617ad7adfc57da0bc9592f5ea52f8
 
 
-router.get('/user/test',(req, res, next) =>{
+
+
+router.get('/user/test',(_req, res) =>{
   res.send("running perfectly")
 })
-
 
 module.exports = router
